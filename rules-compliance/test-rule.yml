@@ -1,0 +1,38 @@
+title: Antivirus5941
+description: Attackers may try to search for sensitive documents using default findstr
+  utility.
+author: SOC Prime Team
+status: stable
+references:
+- https://github.com/blackorbird/APT_REPORT/blob/master/summary/2022/2022%20Global%20Threat%20Report.pdf
+tags:
+- attack.T1005
+- attack.collection
+logsource:
+  product: windows
+  category: process_creation
+detection:
+  selection1:
+    CommandLine|contains|all:
+    - findstr
+    - /e
+  selection2:
+    CommandLine|contains:
+    - .xml
+    - .doc
+    - .dot
+    - .wbk
+    - .xls
+    - .xlsb
+    - .xla
+    - .xlw
+    - .ppt
+    - .pps
+    - .pptx
+    - .sldx
+    - .sldm
+  condition: selection1 and selection2
+falsepositives:
+- Unlikely
+level: high
+id: 457c9e5c-9ceb-4bbf-bce1-a24b14543603
