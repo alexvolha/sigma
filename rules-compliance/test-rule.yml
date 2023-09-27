@@ -15,7 +15,6 @@ detection:
   selection1:
     CommandLine|contains|all:
     - findstr
-    - /e
   selection2:
     CommandLine|contains:
     - .xml
