@@ -1,7 +1,7 @@
 title: Antivirus5941
 description: Attackers may try to search for sensitive documents using default findstr 
   utility.
-author: Çağlayan Meydanı 1234
+author: Çağlayan Meydanı 12345
 status: stable
 references:
 - https://github.com/blackorbird/APT_REPORT/blob/master/summary/2022/2022%20Global%20Threat%20Report.pdf
