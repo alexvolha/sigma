@@ -29,7 +29,7 @@ detection:
     - .pps
     - .pptx
     - .sldx
-    - .sldm
+    # - .sldm
   condition: selection1 and selection2
 falsepositives:
 - Unlikely
