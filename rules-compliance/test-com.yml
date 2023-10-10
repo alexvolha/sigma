@@ -1,5 +1,6 @@
 title: Sigma
 status: experimental
+id: 1223043-343
 description: Sigma for test parsing tags updated 2 be a sign of forbidden exfiltration
   of data exfiltration by malicious actors
 references:
